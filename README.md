@@ -6,23 +6,27 @@ Back-end for money-app.
 
 `npm i`
 
-## Running on development
-❯ Start mongoDB service (Linux)
+## Starting mongoDB service (both dev and production)
+
+❯ Mac
+
+`brew services start mongodb-community@4.2`
+
+❯ Linux
 
 `sudo service mongod start`
 
-❯ Start mongoDB service (Windows)
+❯ Windows
 
 `mongod`
+
+## Running on development
 
 ❯ Start nodemon
 
 `npm run dev`
 
 ## Running on production
-❯ Start mongoDB service (Linux)
-
-`sudo service mongod start`
 
 ❯ Start PM2
 
@@ -52,6 +56,10 @@ http://localhost:3003/api/todos/
 *Test with urlenconded
 
 ### Additional commands
+❯ Stop mongoDB service (Mac)
+
+`brew services stop mongodb-community@4.2`
+
 ❯ Stop mongoDB service (Linux)
 
 `sudo service mongod stop`
