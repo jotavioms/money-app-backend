@@ -36,7 +36,22 @@ Back-end for money-app.
 ❯ Request
 
 ```
-http://localhost:3003/api/todos/
+http://localhost:3003/api/billingCycles
+```
+```
+name: Janeiro/17
+month: 1
+year: 2017
+credits[0][name]:Salario Empresa
+credits[0][value]:6500
+credits[1][name]:Salario Professor
+credits[1][value]:2700
+debts[0][name]:Telefone
+debts[0][value]:89.56
+debts[0][status]:PAGO
+debts[1][name]:Condominio
+debts[1][value]:720
+debts[1][status]:AGENDADO
 ```
 
 ❯ Response
@@ -44,11 +59,37 @@ http://localhost:3003/api/todos/
 ```
 [
   {
-    "_id": "5d1fa1b9bc17777fd3be2d9a",
-    "description": " Finish my React project",
+    "_id": "5e42fbf80cbd2f2f0deaf78e",
+    "name": " Janeiro/17",
+    "month": 1,
+    "year": 2017,
     "__v": 0,
-    "createdAt": "2019-07-05T19:15:05.830Z",
-    "done": false
+    "debts": [
+      {
+        "name": "Telefone",
+        "value": 89.56,
+        "status": "PAGO",
+        "_id": "5e42fbf80cbd2f2f0deaf790"
+      },
+      {
+        "name": "Condominio",
+        "value": 720,
+        "status": "AGENDADO",
+        "_id": "5e42fbf80cbd2f2f0deaf78f"
+      }
+    ],
+    "credits": [
+      {
+        "name": "Salario Empresa",
+        "value": 6500,
+        "_id": "5e42fbf80cbd2f2f0deaf792"
+      },
+      {
+        "name": "Salario Professor",
+        "value": 2700,
+        "_id": "5e42fbf80cbd2f2f0deaf791"
+      }
+    ]
   }
 ]
 ```
