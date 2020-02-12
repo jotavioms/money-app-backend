@@ -1,7 +1,7 @@
-# todo-app-backend
+# money-app-backend
 Back-end for money-app.
 
-## Installation
+## Install
 ❯ Install dependencies:
 
 `npm i`
@@ -33,11 +33,15 @@ Back-end for money-app.
 `npm run production`
 
 ### Endpoint
-❯ Request
+
+❯ Api
 
 ```
 http://localhost:3003/api/billingCycles
 ```
+
+❯ POST
+
 ```
 name: Janeiro/17
 month: 1
@@ -54,7 +58,7 @@ debts[1][value]:720
 debts[1][status]:AGENDADO
 ```
 
-❯ Response
+❯ GET
 
 ```
 [
