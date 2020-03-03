@@ -11,7 +11,7 @@ Back-end for money-app.
 ```
 module.exports = {
   // Change this for a secure key
-  authSecret = ''
+  authSecret: 'xyz@11#dsakn',
 }
 ```
 
