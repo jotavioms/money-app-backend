@@ -6,6 +6,15 @@ Back-end for money-app.
 
 `npm i`
 
+❯ Create src/.env file for auth key service:
+
+```
+module.exports = {
+  // Change this for a secure key
+  authSecret = ''
+}
+```
+
 ## Starting mongoDB service (both dev and production)
 
 ❯ Mac
