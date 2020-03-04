@@ -1,0 +1,8 @@
+/*
+* Rename this file for .env
+* Generate a secury key for authSecret
+*/
+
+module.exports = {
+  authSecret: 'foy*06l6#$5pzd8v%w*c',
+}
